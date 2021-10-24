@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+</head>
+
+<body>
+
+    <style>
+        .pc,
+        .table,
+        .mobile {
+            font-size: 64px;
+            text-align: center;
+            display: none;
+        }
+        /* PC */
+        
+        @media (min-width: 1024px) {
+            .pc {
+                display: block;
+            }
+        }
+        /* Table */
+        
+        @media (min-width: 720px) and (max-width:1023px) {
+            .table {
+                display: block;
+            }
+        }
+        /* mobile */
+        
+        @media (max-width: 740px) {
+            .mobile {
+                display: block;
+            }
+        }
+        /* 
+        pc >= 1024px 
+        table >=720px & <= 1024px
+        mobile < 740px
+        */
+    </style>
+
+    <h2 class="pc">PC</h2>
+    <h2 class="table">TABLE</h2>
+    <h2 class="mobile">MOBILE</h2>
+
+</body>
+
+</html>
